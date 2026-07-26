@@ -20,6 +20,7 @@
 
     --pink:rgba(255,220,240,.92);
     --purple:#b388ff;
+    --lavender:rgba(238, 103, 220, 0.92);
 
     --text:rgba(255,220,240,.92);
 
@@ -1307,7 +1308,7 @@ dd{
 
 label{
 
-    color:var(--pink);
+    color:var(--lavender);
 
 }
 
