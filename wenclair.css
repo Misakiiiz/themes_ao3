@@ -69,7 +69,7 @@ body{
 
 #header{
 
-    background:var(--black);
+    background-image:url("https://raw.githubusercontent.com/Misakiiiz/themes_ao3/e4dd019591ccb8801d8e867bda7fd4ea7f7e7ff9/wenclair.jpg");
 
     background-size:cover;
 
@@ -77,10 +77,6 @@ body{
 
     background-repeat:no-repeat;
 
-    background-image:url("https://github.com/Misakiiiz/themes_ao3/blob/e4dd019591ccb8801d8e867bda7fd4ea7f7e7ff9/wenclair.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
 }
 
 #header h1{
