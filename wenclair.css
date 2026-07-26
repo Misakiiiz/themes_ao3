@@ -302,7 +302,7 @@ h4,
 
 #main{
 
-    background:var(--gray);
+    background: #000000;
 
     border:1px solid var(--border);
 
@@ -316,7 +316,7 @@ h4,
 
 #main a{
 
-    color:var(--pink);
+    color: var(--lavender);
 
     transition:.3s;
 
@@ -336,7 +336,7 @@ h4,
 
 .blurb{
 
-    background:var(--gray);
+    background: #000000;
 
     border:1px solid var(--border);
 
