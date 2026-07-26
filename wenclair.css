@@ -1,0 +1,1350 @@
+/* ========================================= */
+/*      Wenclair AO3 Theme - Black & Pink    */
+/* ========================================= */
+
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ========================= */
+/* Paleta */
+/* ========================= */
+
+:root{
+
+    --black:#000000;
+    --black2:#090909;
+    --black3:#111111;
+    --gray:#181818;
+    --gray2:#222222;
+    --gray3:#2d2d2d;
+
+    --pink:rgba(255,220,240,.92);
+    --purple:#b388ff;
+
+    --text:rgba(255,220,240,.92);
+
+    --border:rgba(255,220,240,.18);
+
+}
+
+/* ========================= */
+/* Corpo */
+/* ========================= */
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--black);
+
+    color:var(--text);
+
+}
+
+/* ========================= */
+/* Fundo */
+/* ========================= */
+
+#outer.wrapper{
+
+    background:var(--black);
+
+    background-image:url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+    background-repeat:repeat;
+
+}
+
+/* Wrapper */
+
+#inner.wrapper{
+
+    margin:0 4%;
+
+}
+
+/* ========================= */
+/* Header */
+/* ========================= */
+
+#header{
+
+    background:var(--black);
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-image:url("wenclair.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+#header h1{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+#header .heading{
+
+    height:16em;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:30px;
+
+}
+
+#header .logo{
+
+    display:none;
+
+}
+
+#header .heading sup{
+
+    display:none;
+
+}
+
+#header h1.heading a{
+
+    color:var(--purple);
+
+    font-size:2.8rem;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-shadow:
+        0 0 15px rgba(179,136,255,.35);
+
+}
+
+/* ========================= */
+/* Navegação */
+/* ========================= */
+
+#header .primary{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    background:var(--gray);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+/* Links */
+
+#header a{
+
+    transition:.35s;
+
+}
+
+#header a:link,
+#header a:visited{
+
+    color:var(--pink);
+
+}
+
+#header a:hover{
+
+    color:var(--purple);
+
+}
+
+/* Ações */
+
+#header .actions a{
+
+    color:var(--pink)!important;
+
+}
+
+#header .actions a:hover{
+
+    color:var(--purple)!important;
+
+}
+
+/* ========================= */
+/* Menus */
+/* ========================= */
+
+#greeting .menu,
+#header .dropdown .menu{
+
+    background:var(--gray);
+
+    border:1px solid var(--border);
+
+}
+
+/* AO3 não permite backdrop-filter */
+
+#header .dropdown:hover a{
+
+    background:var(--gray);
+
+}
+
+/* ========================= */
+/* Pesquisa */
+/* ========================= */
+
+#header #search .text{
+
+    background:var(--black3);
+
+    color:var(--pink);
+
+    border:1px solid var(--border);
+
+    border-radius:7px;
+
+    transition:.3s;
+
+}
+
+#header #search .text:focus{
+
+    border-color:var(--purple);
+
+    box-shadow:
+        0 0 12px rgba(179,136,255,.35);
+
+}
+
+#header form.search input[type=submit]{
+
+    display:none;
+
+}
+
+/* ========================= */
+/* Scrollbar */
+/* ========================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--black2);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--gray3);
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--purple);
+
+}
+
+/* ========================= */
+/* Seleção */
+/* ========================= */
+
+::selection{
+
+    background:var(--purple);
+
+    color:black;
+
+}
+
+/* ========================= */
+/* Tipografia */
+/* ========================= */
+
+h1,
+h2,
+h3,
+h4,
+.heading{
+
+    font-family:"Cormorant Garamond",serif;
+
+    letter-spacing:1px;
+
+    color:var(--purple);
+
+}
+
+/* ========================= */
+/* Main */
+/* ========================= */
+
+#main{
+
+    background:var(--gray);
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+}
+
+/* ========================= */
+/* Links */
+/* ========================= */
+
+#main a{
+
+    color:var(--pink);
+
+    transition:.3s;
+
+}
+
+#main a:hover{
+
+    color:var(--purple);
+
+    background:transparent;
+
+}
+
+/* ========================= */
+/* Blurbs */
+/* ========================= */
+
+.blurb{
+
+    background:var(--gray);
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    margin-bottom:1.8em;
+
+    padding:1.4em;
+
+    transition:.35s;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.45);
+
+}
+
+.blurb:hover{
+
+    transform:translateY(-4px);
+
+    border-color:var(--purple);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.60),
+        0 0 20px rgba(179,136,255,.18);
+
+}
+
+/* ========================= */
+/* Títulos */
+/* ========================= */
+
+.blurb h4{
+
+    font-size:1.65rem;
+
+    margin-bottom:.2em;
+
+    color:var(--purple);
+
+}
+
+.blurb h4 a{
+
+    color:var(--purple);
+
+    text-decoration:none;
+
+}
+
+.blurb h4 a:hover{
+
+    color:var(--pink);
+
+}
+
+.blurb h4 a:visited{
+
+    color:var(--purple);
+
+}
+
+/* ========================= */
+/* Autor */
+/* ========================= */
+
+.heading.byline{
+
+    background:transparent;
+
+    font-size:.95rem;
+
+    color:var(--pink);
+
+}
+
+.heading.byline a{
+
+    color:var(--pink);
+
+}
+
+.heading.byline a:hover{
+
+    color:var(--purple);
+
+}
+
+/* ========================= */
+/* Resumo */
+/* ========================= */
+
+.userstuff{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+/* ========================= */
+/* Metadata */
+/* ========================= */
+
+dl.meta{
+
+    background:var(--black3);
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    padding:.8em;
+
+    color:var(--pink);
+
+}
+
+dl.meta dt{
+
+    color:var(--purple);
+
+    font-weight:700;
+
+}
+
+dl.meta dd{
+
+    color:var(--pink);
+
+}
+
+/* ========================= */
+/* Tags */
+/* ========================= */
+
+.tags{
+
+    margin-top:.7em;
+
+}
+
+/* Ships */
+
+.relationships .tag{
+
+    display:inline-block;
+
+    padding:.30em .85em;
+
+    margin:.2em;
+
+    background:rgba(255,220,240,.08);
+
+    border:1px solid rgba(255,220,240,.22);
+
+    border-radius:40px;
+
+    color:var(--pink)!important;
+
+    font-weight:600;
+
+}
+
+/* Personagens */
+
+.characters .tag{
+
+    display:inline-block;
+
+    padding:.30em .85em;
+
+    margin:.2em;
+
+    background:rgba(179,136,255,.10);
+
+    border:1px solid rgba(179,136,255,.25);
+
+    border-radius:40px;
+
+    color:var(--purple)!important;
+
+    font-weight:600;
+
+}
+
+/* Fandoms */
+
+.fandoms .tag{
+
+    display:inline-block;
+
+    padding:.30em .85em;
+
+    margin:.2em;
+
+    background:rgba(255,220,240,.06);
+
+    border:1px solid rgba(255,220,240,.12);
+
+    border-radius:40px;
+
+    color:var(--pink)!important;
+
+}
+
+/* Freeforms */
+
+.freeforms .tag{
+
+    display:inline-block;
+
+    padding:.30em .85em;
+
+    margin:.2em;
+
+    background:rgba(179,136,255,.08);
+
+    border:1px solid rgba(179,136,255,.18);
+
+    border-radius:40px;
+
+    color:var(--purple)!important;
+
+}
+
+/* Hover */
+
+.tag{
+
+    transition:.25s;
+
+}
+
+.tag:hover{
+
+    background:var(--purple);
+
+    border-color:var(--purple);
+
+    color:#000!important;
+
+}
+
+/* ========================= */
+/* Estatísticas */
+/* ========================= */
+
+.statistics{
+
+    background:var(--black3);
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    padding:.8em;
+
+    color:var(--pink);
+
+}
+
+.statistics .index{
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.statistics .index li{
+
+    list-style:none;
+
+    background:transparent;
+
+    border-bottom:1px solid rgba(255,220,240,.08);
+
+    padding:.45em;
+
+    color:var(--pink);
+
+}
+
+.statistics .index li:last-child{
+
+    border-bottom:none;
+
+}
+
+.statistics strong{
+
+    color:var(--purple);
+
+}
+
+/* ========================= */
+/* Dashboard */
+/* ========================= */
+
+#dashboard{
+
+    background:var(--gray);
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+}
+
+#dashboard .navigation{
+
+    background:transparent;
+
+}
+
+#dashboard a{
+
+    color:var(--pink);
+
+    transition:.25s;
+
+}
+
+#dashboard a:hover{
+
+    background:rgba(255,220,240,.08);
+
+    color:var(--purple);
+
+}
+
+#dashboard .current{
+
+    background:rgba(179,136,255,.18)!important;
+
+    color:var(--purple)!important;
+
+    font-weight:700;
+
+}
+
+/* ========================= */
+/* Botões */
+/* ========================= */
+
+.actions a,
+.actions button,
+input[type=submit],
+button{
+
+    background:var(--gray2);
+
+    color:var(--pink);
+
+    border:1px solid var(--border);
+
+    border-radius:7px;
+
+    transition:.25s;
+
+}
+
+.actions a:hover,
+.actions button:hover,
+input[type=submit]:hover,
+button:hover{
+
+    background:var(--purple);
+
+    color:#000;
+
+    border-color:var(--purple);
+
+}
+
+/* ========================= */
+/* Tabelas */
+/* ========================= */
+
+table{
+
+    background:var(--black3);
+
+    border:1px solid var(--border);
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:var(--gray2);
+
+    color:var(--purple);
+
+}
+
+td{
+
+    border:1px solid rgba(255,220,240,.08);
+
+    color:var(--pink);
+
+}
+
+/* ========================= */
+/* Bookmark */
+/* ========================= */
+
+.bookmark .user{
+
+    color:var(--purple);
+
+}
+
+/* ========================= */
+/* Capítulos */
+/* ========================= */
+
+.chapter{
+
+    background:var(--black3);
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+}
+
+/* ========================= */
+/* Paginação */
+/* ========================= */
+
+.pagination{
+
+    margin:2em auto;
+
+    text-align:center;
+
+}
+
+.pagination a{
+
+    background:var(--gray2);
+
+    color:var(--pink);
+
+    border:1px solid var(--border);
+
+    border-radius:5px;
+
+    padding:.4em .8em;
+
+}
+
+.pagination a:hover{
+
+    background:var(--purple);
+
+    color:#000;
+
+}
+
+.pagination .current{
+
+    background:var(--purple);
+
+    color:#000;
+
+    font-weight:700;
+
+}
+
+/* ========================= */
+/* Comentários */
+/* ========================= */
+
+.comment{
+
+    background:var(--gray);
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    padding:1.2em;
+
+    margin:1.5em 0;
+
+}
+
+.comment .icon{
+
+    display:none;
+
+}
+
+.comment .userstuff{
+
+    background:none;
+
+}
+
+.comment h4{
+
+    color:var(--purple);
+
+}
+
+.comment a{
+
+    color:var(--pink);
+
+}
+
+.comment a:hover{
+
+    color:var(--purple);
+
+}
+
+/* ========================= */
+/* Thread */
+/* ========================= */
+
+.thread .even{
+
+    background:rgba(255,255,255,.03);
+
+}
+
+.thread .odd{
+
+    background:transparent;
+
+}
+
+/* ========================= */
+/* Notices */
+/* ========================= */
+
+.notice,
+.comment_notice,
+.kudos_notice,
+ul.notes,
+.flash{
+
+    background:rgba(179,136,255,.10);
+
+    border:1px solid rgba(179,136,255,.25);
+
+    color:var(--pink);
+
+    border-radius:8px;
+
+}
+
+.notice a{
+
+    color:var(--purple);
+
+}
+
+.notice a:hover{
+
+    color:var(--pink);
+
+}
+
+/* ========================= */
+/* Erros */
+/* ========================= */
+
+.error,
+.comment_error,
+.kudos_error{
+
+    background:rgba(120,30,30,.25);
+
+    border:1px solid rgba(255,120,120,.30);
+
+    color:#ffd6de;
+
+    border-radius:8px;
+
+}
+
+/* ========================= */
+/* Inputs */
+/* ========================= */
+
+input,
+textarea,
+select{
+
+    background:var(--black3)!important;
+
+    border:1px solid var(--border);
+
+    color:var(--pink)!important;
+
+    border-radius:7px;
+
+}
+
+textarea{
+
+    min-height:180px;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:var(--purple);
+
+    box-shadow:0 0 10px rgba(179,136,255,.35);
+
+    outline:none;
+
+}
+
+input::placeholder,
+textarea::placeholder{
+
+    color:rgba(255,220,240,.55);
+
+}
+
+/* ========================= */
+/* Perfil */
+/* ========================= */
+
+.profile .primary,
+.profile .secondary{
+
+    background:var(--gray);
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+}
+
+/* ========================= */
+/* Listbox */
+/* ========================= */
+
+.listbox,
+fieldset fieldset.listbox{
+
+    background:var(--black3);
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    color:var(--pink);
+
+}
+
+/* ========================= */
+/* Download */
+/* ========================= */
+
+.work.navigation .download{
+
+    background:var(--gray2);
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+}
+
+/* ========================= */
+/* Modal */
+/* ========================= */
+
+#modal{
+
+    background:var(--gray);
+
+    border:1px solid var(--border);
+
+    color:var(--pink);
+
+}
+
+/* ========================= */
+/* Pesquisa */
+/* ========================= */
+
+.filters{
+
+    background:var(--black3);
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+}
+
+.filters dt{
+
+    color:var(--purple);
+
+    font-weight:700;
+
+}
+
+.filters dd{
+
+    color:var(--pink);
+
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+
+#footer{
+
+    background:var(--black);
+
+    color:var(--pink);
+
+    border-top:1px solid var(--border);
+
+    margin-top:4em;
+
+}
+
+#footer a{
+
+    color:var(--pink);
+
+}
+
+#footer a:hover{
+
+    color:var(--purple);
+
+}
+
+/* ========================= */
+/* Linha Horizontal */
+/* ========================= */
+
+hr{
+
+    border:none;
+
+    border-top:1px solid var(--border);
+
+}
+
+/* ========================= */
+/* Blockquotes */
+/* ========================= */
+
+blockquote{
+
+    background:var(--black3);
+
+    border-left:4px solid var(--purple);
+
+    padding:1em;
+
+    color:var(--pink);
+
+}
+
+/* ========================= */
+/* Código */
+/* ========================= */
+
+pre{
+
+    background:#0a0a0a;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    padding:1em;
+
+    overflow:auto;
+
+}
+
+code{
+
+    color:var(--pink);
+
+}
+
+/* ========================= */
+/* Imagens */
+/* ========================= */
+
+img{
+
+    border-radius:6px;
+
+}
+
+/* ========================= */
+/* Fieldsets */
+/* ========================= */
+
+fieldset{
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+}
+
+legend{
+
+    color:var(--purple);
+
+    font-weight:700;
+
+}
+
+/* ========================= */
+/* Abbr */
+/* ========================= */
+
+abbr{
+
+    text-decoration:none;
+
+}
+
+/* ========================= */
+/* Links Globais */
+/* ========================= */
+
+a{
+
+    transition:.3s ease;
+
+}
+
+button,
+input,
+textarea,
+select{
+
+    transition:.3s ease;
+
+}
+
+/* ========================= */
+/* Hover Geral */
+/* ========================= */
+
+.blurb,
+.comment,
+.chapter,
+.statistics,
+.listbox,
+.filters,
+#dashboard{
+
+    transition:.3s ease;
+
+}
+
+.blurb:hover,
+.comment:hover,
+.chapter:hover{
+
+    border-color:rgba(179,136,255,.35);
+
+}
+
+/* ========================= */
+/* Títulos */
+/* ========================= */
+
+h1::after,
+h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+
+    height:2px;
+
+    margin-top:.35em;
+
+    background:var(--purple);
+
+}
+
+/* ========================= */
+/* Responsividade */
+/* ========================= */
+
+@media (max-width:768px){
+
+    #header{
+
+        min-height:150px;
+
+    }
+
+    #header h1.heading a{
+
+        font-size:2rem;
+
+    }
+
+    .blurb{
+
+        padding:1em;
+
+    }
+
+    #inner.wrapper{
+
+        margin:0 2%;
+
+    }
+
+    .statistics{
+
+        font-size:.95rem;
+
+    }
+
+}
+
+/* ========================= */
+/* Pequenos detalhes */
+/* ========================= */
+
+strong{
+
+    color:var(--purple);
+
+}
+
+em{
+
+    color:var(--pink);
+
+}
+
+dt{
+
+    color:var(--purple);
+
+}
+
+dd{
+
+    color:var(--pink);
+
+}
+
+label{
+
+    color:var(--pink);
+
+}
+
+li{
+
+    color:var(--pink);
+
+}
+
+p{
+
+    color:var(--pink);
+
+}
+
+span{
+
+    color:inherit;
+
+}
+
+/* ========================= */
+/* Seleção */
+/* ========================= */
+
+::selection{
+
+    background:var(--purple);
+
+    color:#000;
+
+}
+
+/* ========================= */
+/* Fim */
+/* ========================= */
